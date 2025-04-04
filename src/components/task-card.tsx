@@ -1,82 +1,97 @@
 
-import { Card } from "@/components/ui/card"
-import { Task, Priority, useTaskStore } from "@/lib/store"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Circle, CheckCircle2, Clock, ArrowRight } from "lucide-react"
+import { Task } from "@/lib/store"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
+import { Card } from "./ui/card"
+import { Draggable } from "react-beautiful-dnd"
+import { useTaskStore } from "@/lib/store"
+import { format } from "date-fns"
+import { Check, Clock, Tag, Trash } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
 
-const priorityColors: Record<Priority, string> = {
-  low: "bg-blue-500/10 text-blue-500",
-  medium: "bg-yellow-500/10 text-yellow-500",
-  high: "bg-red-500/10 text-red-500",
+interface TaskCardProps {
+  task: Task
+  index: number
 }
 
-export function TaskCard({ task }: { task: Task }) {
-  const { updateTask, setFocusedTask } = useTaskStore()
+export function TaskCard({ task, index }: TaskCardProps) {
+  const { toggleComplete, deleteTask } = useTaskStore()
 
-  const toggleComplete = () => {
-    updateTask(task.id, {
-      status: task.status === "completed" ? "today" : "completed",
-      completedAt: task.status === "completed" ? undefined : Date.now(),
-    })
-  }
+  const isOverdue = task.dueDate && task.dueDate < Date.now() && !task.isCompleted
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-    >
-      <Card className="p-4 space-y-3 hover:shadow-lg transition-all">
-        <div className="flex items-start justify-between">
-          <div className="flex items-start gap-3 flex-1">
-            <button
-              onClick={toggleComplete}
-              className="mt-1 text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              {task.status === "completed" ? (
-                <CheckCircle2 className="w-5 h-5 text-green-500" />
-              ) : (
-                <Circle className="w-5 h-5" />
-              )}
-            </button>
-            <div className="space-y-1 flex-1">
-              <h3
-                className={cn(
-                  "font-medium line-clamp-2",
-                  task.status === "completed" && "line-through text-gray-400"
-                )}
-              >
-                {task.title}
-              </h3>
-              {task.description && (
-                <p className="text-sm text-gray-500 line-clamp-2">
-                  {task.description}
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center justify-between">
-          <Badge variant="secondary" className={priorityColors[task.priority]}>
-            {task.priority}
-          </Badge>
-          <div className="flex items-center gap-2">
-            {task.status !== "completed" && (
+    <Draggable draggableId={task.id} index={index}>
+      {(provided) => (
+        <div
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+        >
+          <Card className={cn(
+            "p-4 mb-2 group hover:shadow-md transition-all",
+            task.isCompleted && "opacity-75 bg-gray-50",
+            isOverdue && "border-red-200 bg-red-50"
+          )}>
+            <div className="flex items-start gap-2">
               <Button
                 variant="ghost"
-                size="sm"
-                className="h-8"
-                onClick={() => setFocusedTask(task)}
+                size="icon"
+                className={cn(
+                  "h-6 w-6 shrink-0",
+                  task.isCompleted && "bg-green-100 text-green-700"
+                )}
+                onClick={() => toggleComplete(task.id)}
               >
-                <Clock className="w-4 h-4 mr-1" /> Focus
+                <Check className="h-4 w-4" />
               </Button>
-            )}
-          </div>
+              <div className="flex-1 min-w-0">
+                <h3 className={cn(
+                  "font-medium truncate",
+                  task.isCompleted && "line-through text-gray-500"
+                )}>
+                  {task.title}
+                </h3>
+                {task.description && (
+                  <p className="text-sm text-gray-500 line-clamp-2 mt-1">
+                    {task.description}
+                  </p>
+                )}
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {task.dueDate && (
+                    <Badge variant={isOverdue ? "destructive" : "secondary"} className="flex gap-1 items-center">
+                      <Clock className="h-3 w-3" />
+                      {format(task.dueDate, "MMM d")}
+                    </Badge>
+                  )}
+                  {task.labels?.map((label) => (
+                    <Badge key={label} variant="outline" className="flex gap-1 items-center">
+                      <Tag className="h-3 w-3" />
+                      {label}
+                    </Badge>
+                  ))}
+                  <Badge variant={
+                    task.priority === "high"
+                      ? "destructive"
+                      : task.priority === "medium"
+                      ? "default"
+                      : "secondary"
+                  }>
+                    {task.priority}
+                  </Badge>
+                </div>
+              </div>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="opacity-0 group-hover:opacity-100 h-6 w-6"
+                onClick={() => deleteTask(task.id)}
+              >
+                <Trash className="h-4 w-4" />
+              </Button>
+            </div>
+          </Card>
         </div>
-      </Card>
-    </motion.div>
+      )}
+    </Draggable>
   )
 }
