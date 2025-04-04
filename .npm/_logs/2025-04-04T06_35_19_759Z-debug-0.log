@@ -1,0 +1,525 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.5.0
+2 info using node@v21.7.3
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/user/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 0ms
+15 timing config:load Completed in 11ms
+16 timing npm:load:configload Completed in 11ms
+17 timing config:load:flatten Completed in 3ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm install
+21 verbose argv "install" "--force"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2025-04-04T06_35_19_759Z-
+25 verbose logfile /home/user/.npm/_logs/2025-04-04T06_35_19_759Z-debug-0.log
+26 timing npm:load:logFile Completed in 11ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 warn using --force Recommended protections disabled.
+30 timing npm:load Completed in 48ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 321ms
+34 timing idealTree:userRequests Completed in 0ms
+35 silly idealTree buildDeps
+36 silly fetch manifest zustand@latest
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/zustand 305ms (cache miss)
+39 silly fetch manifest @types/react@^18
+40 http fetch GET 200 https://registry.npmjs.org/@types%2freact 148ms (cache miss)
+41 silly fetch manifest immer@>=9.0.6
+42 http fetch GET 200 https://registry.npmjs.org/immer 76ms (cache miss)
+43 silly fetch manifest react@^18
+44 http fetch GET 200 https://registry.npmjs.org/react 269ms (cache miss)
+45 silly fetch manifest use-sync-external-store@>=1.2.0
+46 http fetch GET 200 https://registry.npmjs.org/use-sync-external-store 162ms (cache miss)
+47 silly fetch manifest react-beautiful-dnd@latest
+48 http fetch GET 200 https://registry.npmjs.org/react-beautiful-dnd 101ms (cache miss)
+49 silly fetch manifest react-dom@^18
+50 http fetch GET 200 https://registry.npmjs.org/react-dom 258ms (cache miss)
+51 silly fetch manifest @types/react-beautiful-dnd@latest
+52 http fetch GET 200 https://registry.npmjs.org/@types%2freact-beautiful-dnd 67ms (cache miss)
+53 silly placeDep ROOT @types/react-beautiful-dnd@13.1.8 OK for: user@0.1.0 want: latest
+54 silly placeDep ROOT react-beautiful-dnd@13.1.1 OK for: user@0.1.0 want: latest
+55 silly placeDep ROOT zustand@5.0.3 OK for: user@0.1.0 want: latest
+56 silly fetch manifest redux@^4.0.4
+57 http fetch GET 200 https://registry.npmjs.org/redux 72ms (cache miss)
+58 silly fetch manifest raf-schd@^4.0.2
+59 http fetch GET 200 https://registry.npmjs.org/raf-schd 52ms (cache miss)
+60 silly fetch manifest memoize-one@^5.1.1
+61 http fetch GET 200 https://registry.npmjs.org/memoize-one 50ms (cache miss)
+62 silly fetch manifest react-redux@^7.2.0
+63 http fetch GET 200 https://registry.npmjs.org/react-redux 48ms (cache miss)
+64 silly fetch manifest use-memo-one@^1.1.1
+65 http fetch GET 200 https://registry.npmjs.org/use-memo-one 54ms (cache miss)
+66 silly fetch manifest css-box-model@^1.2.0
+67 http fetch GET 200 https://registry.npmjs.org/css-box-model 44ms (cache miss)
+68 timing idealTree:#root Completed in 2395ms
+69 timing idealTree:node_modules/@types/react-beautiful-dnd Completed in 1ms
+70 silly fetch manifest react@^16.8.5 || ^17.0.0 || ^18.0.0
+71 silly placeDep ROOT css-box-model@1.2.1 OK for: react-beautiful-dnd@13.1.1 want: ^1.2.0
+72 silly placeDep ROOT memoize-one@5.2.1 OK for: react-beautiful-dnd@13.1.1 want: ^5.1.1
+73 silly placeDep ROOT raf-schd@4.0.3 OK for: react-beautiful-dnd@13.1.1 want: ^4.0.2
+74 silly placeDep ROOT react-redux@7.2.9 OK for: react-beautiful-dnd@13.1.1 want: ^7.2.0
+75 silly placeDep ROOT redux@4.2.1 OK for: react-beautiful-dnd@13.1.1 want: ^4.0.4
+76 silly placeDep ROOT use-memo-one@1.1.3 OK for: react-beautiful-dnd@13.1.1 want: ^1.1.1
+77 silly fetch manifest react-is@^17.0.2
+78 http fetch GET 200 https://registry.npmjs.org/react-is 238ms (cache miss)
+79 silly fetch manifest @types/react-redux@^7.1.20
+80 http fetch GET 200 https://registry.npmjs.org/@types%2freact-redux 69ms (cache miss)
+81 silly fetch manifest hoist-non-react-statics@^3.3.2
+82 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics 52ms (cache miss)
+83 timing idealTree:node_modules/react-beautiful-dnd Completed in 781ms
+84 timing idealTree:node_modules/css-box-model Completed in 0ms
+85 timing idealTree:node_modules/memoize-one Completed in 0ms
+86 timing idealTree:node_modules/raf-schd Completed in 0ms
+87 silly placeDep ROOT @types/react-redux@7.1.34 OK for: react-redux@7.2.9 want: ^7.1.20
+88 silly placeDep ROOT hoist-non-react-statics@3.3.2 OK for: react-redux@7.2.9 want: ^3.3.2
+89 silly placeDep node_modules/react-redux react-is@17.0.2 OK for: react-redux@7.2.9 want: ^17.0.2
+90 silly fetch manifest hoist-non-react-statics@^3.3.0
+91 silly fetch manifest @types/hoist-non-react-statics@^3.3.0
+92 http fetch GET 200 https://registry.npmjs.org/@types%2fhoist-non-react-statics 60ms (cache miss)
+93 silly fetch manifest react-is@^16.7.0
+94 timing idealTree:node_modules/react-redux Completed in 107ms
+95 silly placeDep ROOT @types/hoist-non-react-statics@3.3.6 OK for: @types/react-redux@7.1.34 want: ^3.3.0
+96 timing idealTree:node_modules/@types/react-redux Completed in 3ms
+97 timing idealTree:node_modules/@types/hoist-non-react-statics Completed in 0ms
+98 silly placeDep node_modules/hoist-non-react-statics react-is@16.13.1 OK for: hoist-non-react-statics@3.3.2 want: ^16.7.0
+99 timing idealTree:node_modules/hoist-non-react-statics Completed in 2ms
+100 timing idealTree:node_modules/redux Completed in 0ms
+101 timing idealTree:node_modules/use-memo-one Completed in 0ms
+102 timing idealTree:node_modules/zustand Completed in 0ms
+103 timing idealTree:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 0ms
+104 timing idealTree:node_modules/react-redux/node_modules/react-is Completed in 0ms
+105 timing idealTree:buildDeps Completed in 3429ms
+106 timing idealTree:fixDepFlags Completed in 5ms
+107 timing idealTree Completed in 3758ms
+108 timing reify:loadTrees Completed in 3759ms
+109 timing reify:diffTrees Completed in 20ms
+110 silly reify moves {}
+111 timing reify:retireShallow Completed in 4ms
+112 timing reify:createSparse Completed in 7ms
+113 timing reify:loadBundles Completed in 0ms
+114 silly audit bulk request {
+114 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+114 silly audit   '@babel/runtime': [ '7.27.0' ],
+114 silly audit   '@floating-ui/core': [ '1.6.9' ],
+114 silly audit   '@floating-ui/dom': [ '1.6.13' ],
+114 silly audit   '@floating-ui/react-dom': [ '2.1.2' ],
+114 silly audit   '@floating-ui/utils': [ '0.2.9' ],
+114 silly audit   '@hookform/resolvers': [ '5.0.1' ],
+114 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+114 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+114 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+114 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+114 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+114 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+114 silly audit   '@next/env': [ '14.2.20' ],
+114 silly audit   '@next/swc-darwin-arm64': [ '14.2.20' ],
+114 silly audit   '@next/swc-darwin-x64': [ '14.2.20' ],
+114 silly audit   '@next/swc-linux-arm64-gnu': [ '14.2.20' ],
+114 silly audit   '@next/swc-linux-arm64-musl': [ '14.2.20' ],
+114 silly audit   '@next/swc-linux-x64-gnu': [ '14.2.20' ],
+114 silly audit   '@next/swc-linux-x64-musl': [ '14.2.20' ],
+114 silly audit   '@next/swc-win32-arm64-msvc': [ '14.2.20' ],
+114 silly audit   '@next/swc-win32-ia32-msvc': [ '14.2.20' ],
+114 silly audit   '@next/swc-win32-x64-msvc': [ '14.2.20' ],
+114 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+114 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+114 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+114 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+114 silly audit   '@radix-ui/number': [ '1.1.0' ],
+114 silly audit   '@radix-ui/primitive': [ '1.1.1' ],
+114 silly audit   '@radix-ui/react-accordion': [ '1.2.3' ],
+114 silly audit   '@radix-ui/react-alert-dialog': [ '1.1.6' ],
+114 silly audit   '@radix-ui/react-arrow': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-aspect-ratio': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-avatar': [ '1.1.3' ],
+114 silly audit   '@radix-ui/react-checkbox': [ '1.1.4' ],
+114 silly audit   '@radix-ui/react-collapsible': [ '1.1.3' ],
+114 silly audit   '@radix-ui/react-collection': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-compose-refs': [ '1.1.1' ],
+114 silly audit   '@radix-ui/react-context': [ '1.1.1' ],
+114 silly audit   '@radix-ui/react-context-menu': [ '2.2.6' ],
+114 silly audit   '@radix-ui/react-dialog': [ '1.1.6' ],
+114 silly audit   '@radix-ui/react-direction': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.5' ],
+114 silly audit   '@radix-ui/react-dropdown-menu': [ '2.1.6' ],
+114 silly audit   '@radix-ui/react-focus-guards': [ '1.1.1' ],
+114 silly audit   '@radix-ui/react-focus-scope': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-hover-card': [ '1.1.6' ],
+114 silly audit   '@radix-ui/react-id': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-label': [ '2.1.2' ],
+114 silly audit   '@radix-ui/react-menu': [ '2.1.6' ],
+114 silly audit   '@radix-ui/react-menubar': [ '1.1.6' ],
+114 silly audit   '@radix-ui/react-navigation-menu': [ '1.2.5' ],
+114 silly audit   '@radix-ui/react-popover': [ '1.1.6' ],
+114 silly audit   '@radix-ui/react-popper': [ '1.2.2' ],
+114 silly audit   '@radix-ui/react-portal': [ '1.1.4' ],
+114 silly audit   '@radix-ui/react-presence': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-primitive': [ '2.0.2' ],
+114 silly audit   '@radix-ui/react-progress': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-radio-group': [ '1.2.3' ],
+114 silly audit   '@radix-ui/react-roving-focus': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-scroll-area': [ '1.2.3' ],
+114 silly audit   '@radix-ui/react-select': [ '2.1.6' ],
+114 silly audit   '@radix-ui/react-separator': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-slider': [ '1.2.3' ],
+114 silly audit   '@radix-ui/react-slot': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-switch': [ '1.1.3' ],
+114 silly audit   '@radix-ui/react-tabs': [ '1.1.3' ],
+114 silly audit   '@radix-ui/react-toast': [ '1.2.6' ],
+114 silly audit   '@radix-ui/react-toggle': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-toggle-group': [ '1.1.2' ],
+114 silly audit   '@radix-ui/react-tooltip': [ '1.1.8' ],
+114 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-controllable-state': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-previous': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-rect': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-use-size': [ '1.1.0' ],
+114 silly audit   '@radix-ui/react-visually-hidden': [ '1.1.2' ],
+114 silly audit   '@radix-ui/rect': [ '1.1.0' ],
+114 silly audit   '@standard-schema/utils': [ '0.3.0' ],
+114 silly audit   '@swc/counter': [ '0.1.3' ],
+114 silly audit   '@swc/helpers': [ '0.5.5' ],
+114 silly audit   '@types/d3-array': [ '3.2.1' ],
+114 silly audit   '@types/d3-color': [ '3.1.3' ],
+114 silly audit   '@types/d3-ease': [ '3.0.2' ],
+114 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+114 silly audit   '@types/d3-path': [ '3.1.1' ],
+114 silly audit   '@types/d3-scale': [ '4.0.9' ],
+114 silly audit   '@types/d3-shape': [ '3.1.7' ],
+114 silly audit   '@types/d3-time': [ '3.0.4' ],
+114 silly audit   '@types/d3-timer': [ '3.0.2' ],
+114 silly audit   '@types/node': [ '20.17.30' ],
+114 silly audit   '@types/prop-types': [ '15.7.14' ],
+114 silly audit   '@types/react': [ '18.3.20' ],
+114 silly audit   '@types/react-dom': [ '18.3.6' ],
+114 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+114 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+114 silly audit   'any-promise': [ '1.3.0' ],
+114 silly audit   anymatch: [ '3.1.3' ],
+114 silly audit   arg: [ '5.0.2' ],
+114 silly audit   'aria-hidden': [ '1.2.4' ],
+114 silly audit   'balanced-match': [ '1.0.2' ],
+114 silly audit   'binary-extensions': [ '2.3.0' ],
+114 silly audit   'brace-expansion': [ '2.0.1' ],
+114 silly audit   braces: [ '3.0.3' ],
+114 silly audit   busboy: [ '1.6.0' ],
+114 silly audit   'camelcase-css': [ '2.0.1' ],
+114 silly audit   'caniuse-lite': [ '1.0.30001709' ],
+114 silly audit   chokidar: [ '3.6.0' ],
+114 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+114 silly audit   'class-variance-authority': [ '0.7.1' ],
+114 silly audit   'client-only': [ '0.0.1' ],
+114 silly audit   clsx: [ '2.1.1' ],
+114 silly audit   cmdk: [ '1.1.1' ],
+114 silly audit   'color-convert': [ '2.0.1' ],
+114 silly audit   'color-name': [ '1.1.4' ],
+114 silly audit   commander: [ '4.1.1' ],
+114 silly audit   'cross-spawn': [ '7.0.6' ],
+114 silly audit   'css-mediaquery': [ '0.1.2' ],
+114 silly audit   cssesc: [ '3.0.0' ],
+114 silly audit   csstype: [ '3.1.3' ],
+114 silly audit   'd3-array': [ '3.2.4' ],
+114 silly audit   'd3-color': [ '3.1.0' ],
+114 silly audit   'd3-ease': [ '3.0.1' ],
+114 silly audit   'd3-format': [ '3.1.0' ],
+114 silly audit   'd3-interpolate': [ '3.0.1' ],
+114 silly audit   'd3-path': [ '3.1.0' ],
+114 silly audit   'd3-scale': [ '4.0.2' ],
+114 silly audit   'd3-shape': [ '3.2.0' ],
+114 silly audit   'd3-time': [ '3.1.0' ],
+114 silly audit   'd3-time-format': [ '4.1.0' ],
+114 silly audit   'd3-timer': [ '3.0.1' ],
+114 silly audit   'date-fns': [ '3.6.0' ],
+114 silly audit   'decimal.js-light': [ '2.5.1' ],
+114 silly audit   'detect-node-es': [ '1.1.0' ],
+114 silly audit   didyoumean: [ '1.2.2' ],
+114 silly audit   dlv: [ '1.1.3' ],
+114 silly audit   'dom-helpers': [ '5.2.1' ],
+114 silly audit   eastasianwidth: [ '0.2.0' ],
+114 silly audit   'embla-carousel': [ '8.5.2' ],
+114 silly audit   'embla-carousel-react': [ '8.5.2' ],
+114 silly audit   'embla-carousel-reactive-utils': [ '8.5.2' ],
+114 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+114 silly audit   eventemitter3: [ '4.0.7' ],
+114 silly audit   'fast-equals': [ '5.2.2' ],
+114 silly audit   'fast-glob': [ '3.3.3' ],
+114 silly audit   fastq: [ '1.19.1' ],
+114 silly audit   'fill-range': [ '7.1.1' ],
+114 silly audit   'foreground-child': [ '3.3.1' ],
+114 silly audit   'framer-motion': [ '12.6.3' ],
+114 silly audit   fsevents: [ '2.3.3' ],
+114 silly audit   'function-bind': [ '1.1.2' ],
+114 silly audit   'get-nonce': [ '1.0.1' ],
+114 silly audit   glob: [ '10.4.5' ],
+114 silly audit   'graceful-fs': [ '4.2.11' ],
+114 silly audit   hasown: [ '2.0.2' ],
+114 silly audit   'hyphenate-style-name': [ '1.1.0' ],
+114 silly audit   'input-otp': [ '1.4.2' ],
+114 silly audit   internmap: [ '2.0.3' ],
+114 silly audit   'is-binary-path': [ '2.1.0' ],
+114 silly audit   'is-core-module': [ '2.16.1' ],
+114 silly audit   'is-extglob': [ '2.1.1' ],
+114 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+114 silly audit   'is-glob': [ '4.0.3' ],
+114 silly audit   'is-number': [ '7.0.0' ],
+114 silly audit   isexe: [ '2.0.0' ],
+114 silly audit   jackspeak: [ '3.4.3' ],
+114 silly audit   jiti: [ '1.21.7' ],
+114 silly audit   'js-tokens': [ '4.0.0' ],
+114 silly audit   lilconfig: [ '3.1.3' ],
+114 silly audit   'lines-and-columns': [ '1.2.4' ],
+114 silly audit   lodash: [ '4.17.21' ],
+114 silly audit   'loose-envify': [ '1.4.0' ],
+114 silly audit   'lru-cache': [ '10.4.3' ],
+114 silly audit   'lucide-react': [ '0.487.0' ],
+114 silly audit   matchmediaquery: [ '0.4.2' ],
+114 silly audit   merge2: [ '1.4.1' ],
+114 silly audit   micromatch: [ '4.0.8' ],
+114 silly audit   minimatch: [ '9.0.5' ],
+114 silly audit   minipass: [ '7.1.2' ],
+114 silly audit   'motion-dom': [ '12.6.3' ],
+114 silly audit   'motion-utils': [ '12.6.3' ],
+114 silly audit   mz: [ '2.7.0' ],
+114 silly audit   nanoid: [ '3.3.11' ],
+114 silly audit   next: [ '14.2.20' ],
+114 silly audit   'next-themes': [ '0.4.6' ],
+114 silly audit   postcss: [ '8.4.31', '8.5.3' ],
+114 silly audit   'normalize-path': [ '3.0.0' ],
+114 silly audit   'object-assign': [ '4.1.1' ],
+114 silly audit   'object-hash': [ '3.0.0' ],
+114 silly audit   'package-json-from-dist': [ '1.0.1' ],
+114 silly audit   'path-key': [ '3.1.1' ],
+114 silly audit   'path-parse': [ '1.0.7' ],
+114 silly audit   'path-scurry': [ '1.11.1' ],
+114 silly audit   picocolors: [ '1.1.1' ],
+114 silly audit   picomatch: [ '2.3.1' ],
+114 silly audit   pify: [ '2.3.0' ],
+114 silly audit   pirates: [ '4.0.7' ],
+114 silly audit   'postcss-import': [ '15.1.0' ],
+114 silly audit   'postcss-js': [ '4.0.1' ],
+114 silly audit   'postcss-load-config': [ '4.0.2' ],
+114 silly audit   'postcss-nested': [ '6.2.0' ],
+114 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+114 silly audit   'postcss-value-parser': [ '4.2.0' ],
+114 silly audit   'prop-types': [ '15.8.1' ],
+114 silly audit   'react-is': [ '16.13.1', '18.3.1', '17.0.2' ],
+114 silly audit   'queue-microtask': [ '1.2.3' ],
+114 silly audit   react: [ '18.3.1' ],
+114 silly audit   'react-day-picker': [ '8.10.1' ],
+114 silly audit   'react-dom': [ '18.3.1' ],
+114 silly audit   'react-hook-form': [ '7.55.0' ],
+114 silly audit   'react-remove-scroll': [ '2.6.3' ],
+114 silly audit   'react-remove-scroll-bar': [ '2.3.8' ],
+114 silly audit   'react-resizable-panels': [ '2.1.7' ],
+114 silly audit   'react-responsive': [ '10.0.1' ],
+114 silly audit   'react-smooth': [ '4.0.4' ],
+114 silly audit   'react-style-singleton': [ '2.2.3' ],
+114 silly audit   'react-transition-group': [ '4.4.5' ],
+114 silly audit   'read-cache': [ '1.0.0' ],
+114 silly audit   readdirp: [ '3.6.0' ],
+114 silly audit   recharts: [ '2.15.2' ],
+114 silly audit   'recharts-scale': [ '0.4.5' ],
+114 silly audit   'regenerator-runtime': [ '0.14.1' ],
+114 silly audit   resolve: [ '1.22.10' ],
+114 silly audit   reusify: [ '1.1.0' ],
+114 silly audit   'run-parallel': [ '1.2.0' ],
+114 silly audit   scheduler: [ '0.23.2' ],
+114 silly audit   'shallow-equal': [ '3.1.0' ],
+114 silly audit   'shebang-command': [ '2.0.0' ],
+114 silly audit   'shebang-regex': [ '3.0.0' ],
+114 silly audit   'signal-exit': [ '4.1.0' ],
+114 silly audit   sonner: [ '2.0.3' ],
+114 silly audit   'source-map-js': [ '1.2.1' ],
+114 silly audit   streamsearch: [ '1.1.0' ],
+114 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+114 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+114 silly audit   'styled-jsx': [ '5.1.1' ],
+114 silly audit   sucrase: [ '3.35.0' ],
+114 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+114 silly audit   'tailwind-merge': [ '3.1.0' ],
+114 silly audit   tailwindcss: [ '3.4.17' ],
+114 silly audit   'tailwindcss-animate': [ '1.0.7' ],
+114 silly audit   thenify: [ '3.3.1' ],
+114 silly audit   'thenify-all': [ '1.6.0' ],
+114 silly audit   'tiny-invariant': [ '1.3.3' ],
+114 silly audit   'to-regex-range': [ '5.0.1' ],
+114 silly audit   'ts-interface-checker': [ '0.1.13' ],
+114 silly audit   tslib: [ '2.8.1' ],
+114 silly audit   'tw-animate-css': [ '1.2.5' ],
+114 silly audit   typescript: [ '5.8.2' ],
+114 silly audit   'undici-types': [ '6.19.8' ],
+114 silly audit   'use-callback-ref': [ '1.3.3' ],
+114 silly audit   'use-sidecar': [ '1.1.3' ],
+114 silly audit   'util-deprecate': [ '1.0.2' ],
+114 silly audit   vaul: [ '1.1.2' ],
+114 silly audit   'victory-vendor': [ '36.9.2' ],
+114 silly audit   which: [ '2.0.2' ],
+114 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+114 silly audit   yaml: [ '2.7.1' ],
+114 silly audit   zod: [ '3.24.2' ],
+114 silly audit   '@types/react-beautiful-dnd': [ '13.1.8' ],
+114 silly audit   'react-beautiful-dnd': [ '13.1.1' ],
+114 silly audit   zustand: [ '5.0.3' ],
+114 silly audit   'css-box-model': [ '1.2.1' ],
+114 silly audit   'memoize-one': [ '5.2.1' ],
+114 silly audit   'raf-schd': [ '4.0.3' ],
+114 silly audit   'react-redux': [ '7.2.9' ],
+114 silly audit   redux: [ '4.2.1' ],
+114 silly audit   'use-memo-one': [ '1.1.3' ],
+114 silly audit   '@types/react-redux': [ '7.1.34' ],
+114 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+114 silly audit   '@types/hoist-non-react-statics': [ '3.3.6' ]
+114 silly audit }
+115 verbose reify failed optional dependency /home/user/node_modules/fsevents
+116 silly reify mark deleted [ '/home/user/node_modules/fsevents' ]
+117 verbose reify failed optional dependency /home/user/node_modules/@next/swc-win32-x64-msvc
+118 silly reify mark deleted [ '/home/user/node_modules/@next/swc-win32-x64-msvc' ]
+119 verbose reify failed optional dependency /home/user/node_modules/@next/swc-win32-ia32-msvc
+120 silly reify mark deleted [ '/home/user/node_modules/@next/swc-win32-ia32-msvc' ]
+121 verbose reify failed optional dependency /home/user/node_modules/@next/swc-win32-arm64-msvc
+122 silly reify mark deleted [ '/home/user/node_modules/@next/swc-win32-arm64-msvc' ]
+123 verbose reify failed optional dependency /home/user/node_modules/@next/swc-linux-arm64-musl
+124 silly reify mark deleted [ '/home/user/node_modules/@next/swc-linux-arm64-musl' ]
+125 verbose reify failed optional dependency /home/user/node_modules/@next/swc-linux-arm64-gnu
+126 silly reify mark deleted [ '/home/user/node_modules/@next/swc-linux-arm64-gnu' ]
+127 verbose reify failed optional dependency /home/user/node_modules/@next/swc-darwin-x64
+128 silly reify mark deleted [ '/home/user/node_modules/@next/swc-darwin-x64' ]
+129 verbose reify failed optional dependency /home/user/node_modules/@next/swc-darwin-arm64
+130 silly reify mark deleted [ '/home/user/node_modules/@next/swc-darwin-arm64' ]
+131 timing reifyNode:node_modules/fsevents Completed in 49ms
+132 timing reifyNode:node_modules/@next/swc-win32-x64-msvc Completed in 49ms
+133 timing reifyNode:node_modules/@next/swc-win32-ia32-msvc Completed in 50ms
+134 timing reifyNode:node_modules/@next/swc-win32-arm64-msvc Completed in 49ms
+135 timing reifyNode:node_modules/@next/swc-linux-arm64-musl Completed in 49ms
+136 timing reifyNode:node_modules/@next/swc-linux-arm64-gnu Completed in 49ms
+137 timing reifyNode:node_modules/@next/swc-darwin-x64 Completed in 49ms
+138 timing reifyNode:node_modules/@next/swc-darwin-arm64 Completed in 49ms
+139 silly tarball no local data for @types/hoist-non-react-statics@https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.6.tgz. Extracting by manifest.
+140 silly tarball no local data for hoist-non-react-statics@https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz. Extracting by manifest.
+141 silly tarball no local data for @types/react-redux@https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.34.tgz. Extracting by manifest.
+142 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+143 silly tarball no local data for redux@https://registry.npmjs.org/redux/-/redux-4.2.1.tgz. Extracting by manifest.
+144 silly tarball no local data for react-redux@https://registry.npmjs.org/react-redux/-/react-redux-7.2.9.tgz. Extracting by manifest.
+145 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz. Extracting by manifest.
+146 silly tarball no local data for raf-schd@https://registry.npmjs.org/raf-schd/-/raf-schd-4.0.3.tgz. Extracting by manifest.
+147 silly tarball no local data for memoize-one@https://registry.npmjs.org/memoize-one/-/memoize-one-5.2.1.tgz. Extracting by manifest.
+148 silly tarball no local data for css-box-model@https://registry.npmjs.org/css-box-model/-/css-box-model-1.2.1.tgz. Extracting by manifest.
+149 silly tarball no local data for zustand@https://registry.npmjs.org/zustand/-/zustand-5.0.3.tgz. Extracting by manifest.
+150 silly tarball no local data for react-beautiful-dnd@https://registry.npmjs.org/react-beautiful-dnd/-/react-beautiful-dnd-13.1.1.tgz. Extracting by manifest.
+151 silly tarball no local data for @types/react-beautiful-dnd@https://registry.npmjs.org/@types/react-beautiful-dnd/-/react-beautiful-dnd-13.1.8.tgz. Extracting by manifest.
+152 silly tarball no local data for use-memo-one@https://registry.npmjs.org/use-memo-one/-/use-memo-one-1.1.3.tgz. Extracting by manifest.
+153 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 175ms
+154 timing auditReport:getReport Completed in 183ms
+155 silly audit report {
+155 silly audit report   next: [
+155 silly audit report     {
+155 silly audit report       id: 1101438,
+155 silly audit report       url: 'https://github.com/advisories/GHSA-7m27-7ghc-44w9',
+155 silly audit report       title: 'Next.js Allows a Denial of Service (DoS) with Server Actions',
+155 silly audit report       severity: 'moderate',
+155 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.21',
+155 silly audit report       cwe: [Array],
+155 silly audit report       cvss: [Object]
+155 silly audit report     },
+155 silly audit report     {
+155 silly audit report       id: 1103622,
+155 silly audit report       url: 'https://github.com/advisories/GHSA-f82v-jwr5-mffw',
+155 silly audit report       title: 'Authorization Bypass in Next.js Middleware',
+155 silly audit report       severity: 'critical',
+155 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.25',
+155 silly audit report       cwe: [Array],
+155 silly audit report       cvss: [Object]
+155 silly audit report     }
+155 silly audit report   ]
+155 silly audit report }
+156 timing metavuln:cache:get:security-advisory:next:NpdQYf+4OaOvlNiZgkhHLNCcOTe84gjeay11sdJQ2HSe2hRovddeIJqZfGwiLh+ns7klO1J2oxhVS+ou+h9gmw== Completed in 210ms
+157 timing metavuln:cache:get:security-advisory:next:sRwxXns2Jx2Pd1edvsG5cID01wxEZSh7zL1q0AyAGjICnwvz65raPm6wLUcvxPnSL/F/TL0ZfpcjpUk1ZrqwMQ== Completed in 210ms
+158 http fetch GET 200 https://registry.npmjs.org/use-memo-one/-/use-memo-one-1.1.3.tgz 348ms (cache miss)
+159 timing reifyNode:node_modules/use-memo-one Completed in 508ms
+160 http fetch GET 200 https://registry.npmjs.org/next 474ms (cache hit)
+161 timing metavuln:packument:next Completed in 1076ms
+162 timing metavuln:load:security-advisory:next:1101438 Completed in 413ms
+163 timing metavuln:calculate:security-advisory:next:1101438 Completed in 1491ms
+164 timing metavuln:load:security-advisory:next:1103622 Completed in 91ms
+165 timing metavuln:calculate:security-advisory:next:1103622 Completed in 1579ms
+166 timing auditReport:init Completed in 1680ms
+167 timing reify:audit Completed in 1864ms
+168 http fetch GET 200 https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.6.tgz 1819ms (cache miss)
+169 timing reifyNode:node_modules/@types/hoist-non-react-statics Completed in 1904ms
+170 http fetch GET 200 https://registry.npmjs.org/raf-schd/-/raf-schd-4.0.3.tgz 1846ms (cache miss)
+171 timing reifyNode:node_modules/raf-schd Completed in 1940ms
+172 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 1858ms (cache miss)
+173 timing reifyNode:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 1945ms
+174 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz 1858ms (cache miss)
+175 timing reifyNode:node_modules/react-redux/node_modules/react-is Completed in 1951ms
+176 http fetch GET 200 https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.34.tgz 1870ms (cache miss)
+177 timing reifyNode:node_modules/@types/react-redux Completed in 1956ms
+178 http fetch GET 200 https://registry.npmjs.org/@types/react-beautiful-dnd/-/react-beautiful-dnd-13.1.8.tgz 1860ms (cache miss)
+179 timing reifyNode:node_modules/@types/react-beautiful-dnd Completed in 1957ms
+180 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz 1879ms (cache miss)
+181 timing reifyNode:node_modules/hoist-non-react-statics Completed in 1962ms
+182 http fetch GET 200 https://registry.npmjs.org/css-box-model/-/css-box-model-1.2.1.tgz 1866ms (cache miss)
+183 timing reifyNode:node_modules/css-box-model Completed in 1961ms
+184 http fetch GET 200 https://registry.npmjs.org/memoize-one/-/memoize-one-5.2.1.tgz 1874ms (cache miss)
+185 timing reifyNode:node_modules/memoize-one Completed in 1969ms
+186 http fetch GET 200 https://registry.npmjs.org/redux/-/redux-4.2.1.tgz 1972ms (cache miss)
+187 timing reifyNode:node_modules/redux Completed in 2061ms
+188 http fetch GET 200 https://registry.npmjs.org/zustand/-/zustand-5.0.3.tgz 1965ms (cache miss)
+189 timing reifyNode:node_modules/zustand Completed in 2071ms
+190 http fetch GET 200 https://registry.npmjs.org/react-redux/-/react-redux-7.2.9.tgz 2167ms (cache miss)
+191 timing reifyNode:node_modules/react-redux Completed in 2261ms
+192 http fetch GET 200 https://registry.npmjs.org/react-beautiful-dnd/-/react-beautiful-dnd-13.1.1.tgz 2325ms (cache miss)
+193 warn deprecated react-beautiful-dnd@13.1.1: react-beautiful-dnd is now deprecated. Context and options: https://github.com/atlassian/react-beautiful-dnd/issues/2672
+194 timing reifyNode:node_modules/react-beautiful-dnd Completed in 2431ms
+195 timing reify:unpack Completed in 2434ms
+196 timing reify:unretire Completed in 2ms
+197 timing build:queue Completed in 4ms
+198 timing build:deps Completed in 7ms
+199 timing build Completed in 10ms
+200 timing reify:build Completed in 13ms
+201 timing reify:trash Completed in 12ms
+202 timing reify:save Completed in 488ms
+203 timing reify Completed in 6940ms
+204 silly ADD node_modules/@types/hoist-non-react-statics
+205 silly ADD node_modules/hoist-non-react-statics
+206 silly ADD node_modules/hoist-non-react-statics/node_modules/react-is
+207 silly ADD node_modules/@types/react-redux
+208 silly ADD node_modules/use-memo-one
+209 silly ADD node_modules/redux
+210 silly ADD node_modules/react-redux
+211 silly ADD node_modules/react-redux/node_modules/react-is
+212 silly ADD node_modules/raf-schd
+213 silly ADD node_modules/memoize-one
+214 silly ADD node_modules/css-box-model
+215 silly ADD node_modules/zustand
+216 silly ADD node_modules/react-beautiful-dnd
+217 silly ADD node_modules/@types/react-beautiful-dnd
+218 silly ADD
+219 silly ADD
+220 silly ADD
+221 silly ADD
+222 silly ADD
+223 silly ADD
+224 silly ADD
+225 silly ADD
+226 timing command:install Completed in 7109ms
+227 verbose exit 0
+228 timing npm Completed in 7561ms
+229 info ok
